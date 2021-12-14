@@ -30,7 +30,6 @@ function duplicateElf() {
 
 function boyOrGirl() {
   const decider = Math.floor(Math.random() * 2) + 1;
-  console.log(decider);
   return decider == 1 ? "🧝‍♀️" : "🧝‍♂️";
 }
 

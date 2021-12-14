@@ -27,13 +27,11 @@ body {
 .elf-hangout-zone {
   /* Limit the number of elves to 6 per row. */
   /* Make sure that the elves stay in the elf hangout zone, no matter how many there are. */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 2em 0;
-  flex-direction: row;
-  flex-wrap: wrap;
+
   min-width: 200px;
   min-height: 200px;
   max-width: 30ch;
