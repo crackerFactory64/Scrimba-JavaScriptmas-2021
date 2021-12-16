@@ -1,7 +1,8 @@
 const ageSelector = document.getElementById("age-selector");
 const genreSelector = document.getElementById("genre-selector");
 const vintageSelector = document.getElementById("vintage-selector");
-selectorsArr = [ageSelector, genreSelector, vintageSelector];
+
+const selectorsArr = [ageSelector, genreSelector, vintageSelector];
 
 const btn = document.getElementById("btn");
 const suggestedMovie = document.getElementById("suggested-movie");
