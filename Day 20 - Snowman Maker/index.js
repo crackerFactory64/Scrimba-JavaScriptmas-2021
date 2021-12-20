@@ -1,4 +1,5 @@
 const inputs = document.querySelectorAll(".controls input");
+const hatType = document.getElementById("hat-type");
 
 const eyes = document.querySelectorAll(".eye");
 const nose = document.getElementById("nose");
@@ -11,6 +12,7 @@ function changeColor(input) {
     eyes.forEach((eye) => {
       eye.style.backgroundColor = input.value;
     });
+    console.log(input.value);
   } else if (input.id == "color2") {
     nose.style.borderLeftColor = input.value;
   } else if (input.id == "color3") {
@@ -23,11 +25,21 @@ function changeColor(input) {
   }
 }
 
+function changeHat() {
+  if (hatType.value == "fez") {
+    brim.style.visibility = "hidden";
+  } else {
+    brim.style.visibility = "visible";
+  }
+}
+
 inputs.forEach((input) => {
   input.addEventListener("change", () => {
     changeColor(input);
   });
 });
+
+hatType.addEventListener("change", changeHat);
 
 // Task:
 // Write a function to update the snowman colors according to the colors selected from the pickers.

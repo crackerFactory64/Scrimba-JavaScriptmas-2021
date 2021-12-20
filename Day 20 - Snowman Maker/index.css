@@ -22,6 +22,21 @@ body {
 .controls {
   order: -1;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+}
+
+.controls > * {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+select {
+  padding: 5px;
 }
 
 input,
