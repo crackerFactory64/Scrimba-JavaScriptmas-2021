@@ -12,7 +12,6 @@ function changeColor(input) {
     eyes.forEach((eye) => {
       eye.style.backgroundColor = input.value;
     });
-    console.log(input.value);
   } else if (input.id == "color2") {
     nose.style.borderLeftColor = input.value;
   } else if (input.id == "color3") {
